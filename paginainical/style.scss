@@ -21,6 +21,18 @@ body{
     src: url(../fontes/THEBOLDFONT\ 2022.otf);
 }
 
+
+@font-face {
+    font-family: 'cinzel1';
+    src: url(../fontes/Cinzel-Bold.otf);
+}
+
+
+@font-face {
+    font-family: 'apple';
+    src: url(../fontes/AppleGaramond-Light.ttf);
+}
+
 .navegacao1{
     height: 3rem;
     display: flex;
@@ -29,6 +41,7 @@ body{
     align-items: center;
     background-color: #063395;
     color: #fff;
+
 
     p:first-of-type {
         margin-right: 20px;
@@ -189,8 +202,281 @@ align-items: center;
     margin: 5px 0;
 }
 
-/* Estilos para o menu responsivo */
+
+
+//////////////sessao 1 ------- quem somos
+
+.quemsomos{
+    //   border: 1px solid red;
+      height: 65vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url(../IMG/capaquemsomos2.png);
+      background-size: 30%;
+      background-repeat: no-repeat;
+      .caixatxt{
+          width: 45%;
+          height: 65%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+        //   border: 1px solid red;
+          padding: 25px;
+          .title{
+          //  border: 1px solid rgb(102, 255, 0);
+           text-align: center;
+           margin-top: 15px;
+          h1{
+              font-size: 65px;
+              color: #EE6800;
+              font-family: 'fonte1';
+             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  
+          }
+  
+       
+          }
+           .txt{
+        //   border: 1px solid rgb(255, 12, 255);
+          height: 400px;
+        //   padding: 25px;
+  
+          p{
+              font-size: 18px;
+          }
+          }
+      }
+
+  }
+  
+  
+  
+
+
+/////////////////interacao
+/// 
+
+  
+.interacao {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #EE6800;
+    .caixagrande{
+  //  border: 1px solid red;
+    display: flex;
+    width: 35%;
+    }
+
+    .box{
+    //border: 1px solid red;
+    height: 10rem;
+    width: 10rem;
+    margin: 30px;
+
+    a{
+         list-style-type: none;
+        //   border: 1px solid red;
+         height: 100%;
+        color: #063395;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        i{
+            font-size: 6rem;
+        }
+    }
+
+    }.box:hover{
+        background-color: #010e2b;
+        border-radius: 15px;
+    }
+
+  }
+  .interacao .box {
+    position: relative;
+  }
+
+.interacao .box::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    margin-top: 15px;
+    width: 220px;
+    height: 35px;
+    background-color: #8f3e00;
+    color: #fff;
+    display: none;
+    text-align: center;
+    line-height: 35px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden; /* Adicionado overflow */
+}
+
+.interacao .box:hover::after {
+    display: block;
+}
+
+////////////////confira tamebm
+
+.confiratambem{
+    // border: 1px solid red;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../IMG/confiratambem2.png);
+    // background-color: #ffe59d;
+    //background-repeat: no-repeat;
+
+
+    .container{
+        // border: 1px solid red;
+        height: 75%;
+        width: 75%;
+
+        #carouselExampleControls{
+        // border: 1px solid red;
+        height: 100%;
+        width: 100%;
+
+        img{
+            width:100%;
+            height: 698px;
+        }
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/////////////////rodape
+.svg{
+    position: relative;
+    top: 25px;
+  //  background-color: #FFDFC1;
+}
+.rodape{
+     //border: 1px solid red;
+     height: 55vh;
+     width: 100%;
+     background-color: #ee6800;
+
+
+
+    .container{
+      //   border: 1px solid rgb(4, 0, 255);
+         width: 1000%;
+        height: 100%;
+         display: flex;
+        justify-content: space-around;
+        align-items: center;
+         margin-bottom: 50px;
+         flex-direction: column;
+
+
+
+     .container-dois{
+        font-size: 16px;
+        width: 100%;
+        height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(31, 31, 31);
+
+    }
+
+
+    .container-um{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+    
+
+    .box{
+    //border: 1px solid red;
+    height: 250px;
+    padding: 15px;
+
+    .title{
+        h3{
+        //    color: #063395;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+    }
+    p{
+        color: #f0f0f0;
+        margin-bottom: 5px;
+        a {
+            text-decoration: none;
+            color: #d4d4d4;
+        }
+    }a:hover {
+        color: #010e2b;
+    }
+    
+    a:hover::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 1px;
+        background-color: #063395;
+        animation: link 0.5s forwards;
+    }
+    
+    @keyframes link {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 70%;
+        }
+    }
+    }
+    }
+}
+}
+
+
+[data-aos] {
+    body[data-aos-easing="new-easing"] &,
+    &[data-aos][data-aos-easing="new-easing"] {
+      transition-timing-function: cubic-bezier(.450, .450, .950, .950);
+    }
+  }
+
+
+
+
+
+
+
+
+
+  /* Estilos para o menu responsivo */
 @media screen and (max-width: 768px) {
+    body { overflow-x: hidden; }
+
     .menu-toggle {
         display: block;
     }
@@ -218,62 +504,63 @@ align-items: center;
         display: block;
         padding: 5px;
     }
-}
 
 
 
-//////////////sessao 1 ------- quem somos
 
-.quemsomos{
-    // border: 1px solid red;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+// HEADERRRR
 
-    .caixatxt{
-        width: 50%;
-        height: 65%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        // border: 1px solid red;
-        padding: 25px;
-        .title{
-        //  border: 1px solid rgb(102, 255, 0);
-         text-align: center;
-        h1{
-            font-size: 65px;
-            color: #EE6800;
-            font-family: 'fonte1';
-           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-
-        }
-
-     
-        }
-         .txt{
-       // border: 1px solid rgb(255, 12, 255);
-        height: 400px;
-        padding: 25px;
-        p{
-            font-size: 18px;
-        }
-        }
+.header{
+    height:85vh;
+    background-image: url(../IMG/responsivo/capainicial.png);
+    width: 100%;
+    .container{
+    height: 100%;
+    width: 100%;
+    button {
+        height: 85px;
+        width: 230px;
+        font-size: 16px;
     }
-    .caixaimg{
-        width:35%;
-        // border: 1px solid rgb(12, 247, 255);
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        img{
-            height: 500px;
-            width: 480px;
-        }
-
     }
 }
+
+
+/////confiratabem
+
+
+.confiratambem{
+    height:120vh;
+    background-image: url(../IMG/cftb.png);
+    background-repeat: no-repeat;
+    .container{
+        height: 75%;
+        width: 100%;
+    }
+
+    .carousel-control-next-icon{
+     position: relative;
+    //border: 1px solid red;
+    top: -112px;
+    width: 25px;
+    padding: 15px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.507);
+    }
+    .carousel-control-prev-icon {
+         position: relative;
+        top: -112px;
+        width: 25px;
+        padding: 15px;
+        height: 25px;
+        background-color: rgba(0, 0, 0, 0.507);
+
+    }
+
+}
+
+///interacao
+
 
 /////////////////interacao
 /// 
@@ -281,144 +568,64 @@ align-items: center;
   
 .interacao {
     width: 100%;
-    height: 350px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #EE6800;
-
-    .box{
-    // border: 1px solid red;
-    height: 10rem;
-    width: 10rem;
-
-    a{
-         list-style-type: none;
-        //   border: 1px solid red;
-         height: 100%;
-        color: #063395;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-
-        i{
-            font-size: 6rem;
-        }
+    height: 750px;
+    .caixagrande{
+          display: flex;
+          flex-direction: column;
+          width: 35%;
+          }
     }
 
-    }.box:hover{
-        background-color: #010e2b;
-        border-radius: 15px;
-    }
+
+
+//////////////sessao 1 ------- quem somos
+
+.quemsomos{
+    //   border: 1px solid red;
+      height: 72vh;
+      background-image: url(../IMG/quemsomos768.png);
+      background-size: 100%;
+      .caixatxt{
+          width: 95%;
+          height: 50%;
+          padding: 25px;
+          margin-bottom: 100px;
+
+      }
 
   }
-  .interacao .box {
+
+
+
+/////////////////rodape
+.svg{
     position: relative;
+    top: 25px;
 }
-
-.interacao .box::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    margin-top: 15px;
-    width: 220px;
-    height: 35px;
-    background-color: #8f3e00;
-    color: #fff;
-    display: none;
-    text-align: center;
-    line-height: 35px;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow: hidden; /* Adicionado overflow */
-}
-
-.interacao .box:hover::after {
-    display: block;
-}
-
-////////////////confira tamebm
-
-.confiratambem{
-    //border: 1px solid red;
-    height: 85vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    .title{
-  //   border: 1px solid red;
-    font-size: 1.5rem;
-        h1{
-            font-family: 'Poppins' sans-serif;
-
-        }
-    }
-
-
+.rodape{
+     height: 95vh;
     .container{
-  //   border: 1px solid rgb(4, 0, 255);
-    width: 70%;
-    height: 85%;
-    display: flex;
-    flex-direction: column;
+    .container-um{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        flex-direction: column;
+    .box{
+    height: 240px;
+    padding: 15px;
+    } }}}
+
+
+  }
+
+
+  
+
+
+  
+
+
+
+  
     
 
-
-    .boxdois{
-        width: 100%;
-       //  border: 1px solid pink;
-        height: 50%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-
-    .box{
-    background-color: #fff;
-    width: 25%;
-    height: 75%;
-    padding: 25px;
-
-    #nossalinha{
-        width: 100%;
-    }
-
-    .minititle{
-   // border: 1px solid rgb(255, 0, 0);
-    color: rgb(66, 66, 66);
-    font-size: 14px;
-    margin-bottom: 5px;
-    }
-
-    .img{
-      display: flex;
-    //   border: 1px solid rgb(255, 0, 0);
-        height: 85%;
-      align-items: flex-end;
-      a{
-        text-decoration: none;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-
-        
-      }
-      
-
-      img{
-        width: 100%;
-        height: 100%;
-      }
-    }
-    }.box:hover{
-        transform: scale(0.9);
-    }
-
-    }
-}
