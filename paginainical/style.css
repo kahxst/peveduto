@@ -6,6 +6,10 @@
   transition: 1s ease-in-out;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f0f0f0;
 }
@@ -23,6 +27,22 @@ body {
   src: url(../fontes/Cinzel-Bold.otf);
 }
 @font-face {
+  font-family: "madeinfinity1";
+  src: url(../fontes/MADEINFINITY\ PERSONALUSE-Light.otf);
+}
+@font-face {
+  font-family: "madeinfinity2";
+  src: url(../fontes/MADEINFINITY\ PERSONALUSE-Light.otf);
+}
+@font-face {
+  font-family: "roboto1";
+  src: url(../fontes/Roboto-CondensedItalic.ttf);
+}
+@font-face {
+  font-family: "roboto2";
+  src: url(../fontes/Roboto-Regular.ttf);
+}
+@font-face {
   font-family: "apple";
   src: url(../fontes/AppleGaramond-Light.ttf);
 }
@@ -34,6 +54,9 @@ body {
   align-items: center;
   background-color: #063395;
   color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 .navegacao1 p:first-of-type {
   margin-right: 20px;
@@ -53,6 +76,10 @@ body {
   padding-left: 25px;
   padding-right: 15px;
   align-items: center;
+  position: fixed;
+  top: 45px;
+  width: 100%;
+  z-index: 100;
 }
 .navegacaoprincipal .logo img {
   width: 85%;
@@ -150,10 +177,13 @@ body {
   padding: 5px;
   border-radius: 5px;
   background-color: #EE6800;
-  color: #fff;
   font-size: 14px;
   border: none;
   animation: pulsar 2s infinite;
+}
+.header .container button a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .menu-toggle {
@@ -460,4 +490,100 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
     height: 240px;
     padding: 15px;
   }
+}
+.container-nossalinha {
+  width: 100%;
+  position: relative;
+  top: 85px;
+  height: 170vh;
+}
+
+.caixa-principal-box {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 35px;
+  width: 100%;
+  height: 160vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.caixa-principal-box .title {
+  width: 100%;
+  text-align: center;
+}
+.caixa-principal-box .title h1 {
+  font-size: 3rem;
+  color: #00143f;
+  font-family: "roboto2";
+}
+
+.container-nossalinha .sozinho {
+  display: flex;
+  width: 100%;
+  height: 45%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-nossalinha .image-container {
+  position: relative;
+  overflow: hidden;
+  width: 55%;
+  height: 45%;
+}
+
+.sozinho .image-container {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+}
+
+.container-nossalinha .image-container img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.container-nossalinha .image-container:hover img {
+  filter: brightness(40%);
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+
+.container-nossalinha .image-container:hover .overlay {
+  display: block;
+}
+
+.container-nossalinha .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 30%;
+}
+
+.container-nossalinha .overlay h1 {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.container-nossalinha .overlay a {
+  font-size: 18px;
+  color: #ee6800;
+  text-decoration: none;
+  border-bottom: 1px solid #ee6800;
 }/*# sourceMappingURL=style.css.map */
