@@ -586,4 +586,74 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   color: #ee6800;
   text-decoration: none;
   border-bottom: 1px solid #ee6800;
+}
+
+.box-containerPeveduto {
+  position: relative;
+  top: 110px;
+  height: 100vh;
+}
+.box-containerPeveduto .caixatitleProduto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  background-image: url(../IMG/capaproduto.jpg);
+  background-size: cover;
+}
+.box-containerPeveduto .caixatitleProduto h1 {
+  color: #fff;
+  text-shadow: -5px 2px 9px black;
+  font-size: 3rem;
+}
+.box-containerPeveduto .apresentacao {
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-containerPeveduto .apresentacao .accordion {
+  width: 50%;
+}
+.box-containerPeveduto .apresentacao .accordion .card {
+  border: none;
+}
+.box-containerPeveduto .apresentacao .accordion .card-header {
+  background: transparent;
+  border: none;
+}
+.box-containerPeveduto .pevehd {
+  height: 100vh;
+  padding: 25px;
+}
+.box-containerPeveduto .pevehd .title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+.box-containerPeveduto .pevehd .title h1 {
+  color: #EE6800;
+  font-weight: 600;
+}
+.box-containerPeveduto .pevehd .title p {
+  width: 95%;
+  font-size: 14px;
+}
+.box-containerPeveduto .pevehd .caixa-principal-box {
+  height: auto;
+  padding: 0px;
+}
+.box-containerPeveduto .pevehd .caixa-principal-box .overlay .p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.box-containerPeveduto .pevehd .caixa-principal-box .overlay .p p {
+  color: #fff;
+  width: 75%;
 }/*# sourceMappingURL=style.css.map */

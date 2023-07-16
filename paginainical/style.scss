@@ -761,3 +761,93 @@ z-index: 100;
     border-bottom: 1px solid #ee6800;
 
 }
+
+
+///////////////NOSSA LINHA PEVEDUTO
+.box-containerPeveduto{
+    //  border: 1px solid red;
+    position: relative;
+    top: 110px;
+    height: 100vh;
+
+
+    .caixatitleProduto{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 20rem;
+        background-image: url(../IMG/capaproduto.jpg);
+        background-size: cover;
+
+        h1{
+            color: #fff;
+            text-shadow: -5px 2px 9px black;
+            font-size: 3rem;
+        }
+    }
+
+    .apresentacao{
+       // border: 1px solid rgb(255, 0, 179);
+        width: 100%;
+        height: 30vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .accordion{
+          width: 50%;
+          .card{
+          border: none;
+          }
+          .card-header{
+            background: transparent;
+           border: none;
+          }
+        }
+    }
+
+    .pevehd{
+        //border: 1px solid red;
+        height: 100vh;
+        padding: 25px;
+
+        .title{
+          //  border: 1px solid green;
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            flex-direction: column;
+            width: 50%;
+            h1{
+                color: #EE6800;
+                font-weight: 600;
+            }
+            p{
+                width: 95%;
+                font-size: 14px;
+            }
+        }
+
+        .caixa-principal-box{
+            height:auto;
+            padding: 0px;
+
+
+            .overlay{
+                .p{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 15px;
+                    p{
+                    color: #fff;
+                    width: 75%;
+                
+                    }
+                }
+            }
+        }
+    }
+}
