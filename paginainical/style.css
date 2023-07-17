@@ -656,4 +656,34 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
 .box-containerPeveduto .pevehd .caixa-principal-box .overlay .p p {
   color: #fff;
   width: 75%;
+}
+.box-containerPeveduto .tabelapeveduto {
+  display: flex;
+  justify-content: space-evenly;
+  height: 55vh;
+  width: 100%;
+  padding: 25px;
+  background-color: #fafafa;
+}
+.box-containerPeveduto .tabelapeveduto .box-tabela {
+  width: 50%;
+}
+.box-containerPeveduto .tabelapeveduto .box-tabela img {
+  width: 100%;
+  height: 95%;
+}
+.box-containerPeveduto .tabelapeveduto .box-tabela p {
+  margin-top: 10px;
+  font-family: "roboto1";
+  font-weight: 100;
+  color: rgb(70, 70, 70);
+}
+.box-containerPeveduto .tabelapeveduto .table {
+  width: 15%;
+  margin-left: 50px;
+  height: 100%;
+}
+.box-containerPeveduto .tabelapeveduto .table td, .box-containerPeveduto .tabelapeveduto .table th {
+  padding: 1px;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
