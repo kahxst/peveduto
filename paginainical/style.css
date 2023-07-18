@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -617,12 +618,24 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
 .box-containerPeveduto .apresentacao .accordion {
   width: 50%;
 }
-.box-containerPeveduto .apresentacao .accordion .card {
+.box-containerPeveduto .apresentacao .card {
   border: none;
 }
-.box-containerPeveduto .apresentacao .accordion .card-header {
+.box-containerPeveduto .apresentacao .card-header {
   background: transparent;
   border: none;
+}
+.box-containerPeveduto .apresentacao .custom-button {
+  background-color: blue;
+  color: white;
+}
+.box-containerPeveduto .apresentacao .custom-button:hover {
+  background-color: blue;
+  color: white;
+}
+.box-containerPeveduto .apresentacao .custom-button:focus {
+  background-color: blue;
+  color: white;
 }
 .box-containerPeveduto .pevehd {
   height: 100vh;
@@ -663,6 +676,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   height: 55vh;
   width: 100%;
   padding: 25px;
+  margin-top: 25px;
   background-color: #fafafa;
 }
 .box-containerPeveduto .tabelapeveduto .box-tabela {
@@ -678,12 +692,197 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   font-weight: 100;
   color: rgb(70, 70, 70);
 }
+.box-containerPeveduto .tabelapeveduto .boxtable-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box-containerPeveduto .tabelapeveduto .boxtable-container .baixartabela {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 85px;
+}
+.box-containerPeveduto .tabelapeveduto .boxtable-container .baixartabela a {
+  text-decoration: none;
+  color: rgb(52, 48, 255);
+}
+.box-containerPeveduto .tabelapeveduto .boxtable-container .baixartabela .link1 {
+  margin-right: 10px;
+  font-size: 32px;
+}
 .box-containerPeveduto .tabelapeveduto .table {
-  width: 15%;
+  width: 50%;
   margin-left: 50px;
   height: 100%;
 }
 .box-containerPeveduto .tabelapeveduto .table td, .box-containerPeveduto .tabelapeveduto .table th {
   padding: 1px;
   border: none;
+}
+.box-containerPeveduto .acessorios {
+  height: 90rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios {
+  width: 100%;
+  height: 125vh;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .foto-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+  width: 45%;
+  margin-top: 15px;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .foto-principal img {
+  height: 100%;
+  width: 100%;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor {
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor #box-alterar {
+  margin-top: 15px;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box .img img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-1:hover {
+  background-color: rgba(0, 0, 0, 0.781);
+  transition: background-color 0.2s;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-1:hover .img img {
+  transform: scale(1.1);
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-1:hover::before {
+  content: "CONEXÃO";
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 24px;
+  z-index: 1;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-2:hover {
+  background-color: rgba(0, 0, 0, 0.781);
+  transition: background-color 0.2s;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-2:hover .img img {
+  transform: scale(1.1);
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-2:hover::before {
+  content: "CAIXA DE ACESSO";
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 24px;
+  z-index: 1;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-3:hover {
+  background-color: rgba(0, 0, 0, 0.781);
+  transition: background-color 0.2s;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-3:hover .img img {
+  transform: scale(1.1);
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-3:hover::before {
+  content: "ESPAÇADOR MODULAR";
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 24px;
+  z-index: 1;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-4:hover {
+  background-color: rgba(0, 0, 0, 0.781);
+  transition: background-color 0.2s;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-4:hover .img img {
+  transform: scale(1.1);
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-4:hover::before {
+  content: "FITA DE ADVERTÊNCIA";
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 24px;
+  z-index: 1;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-5:hover {
+  background-color: rgba(0, 0, 0, 0.781);
+  transition: background-color 0.2s;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-5:hover .img img {
+  transform: scale(1.1);
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-5:hover::before {
+  content: "TAMPÃO INTERNO";
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 24px;
+  z-index: 1;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-6:hover {
+  background-color: rgba(0, 0, 0, 0.781);
+  transition: background-color 0.2s;
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-6:hover .img img {
+  transform: scale(1.1);
+}
+.box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-6:hover::before {
+  content: "ANEL DE VEDAÇÃO";
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  font-size: 24px;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */

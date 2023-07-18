@@ -43,6 +43,20 @@ function isElementInViewport(element) {
 
 
 
+///teste
+// Adicione este código em algum lugar após incluir o jQuery e o Bootstrap
+
+$(document).ready(function() {
+  $('#collapseOne').on('show.bs.collapse', function() {
+    $('#buttonText').addClass('d-none');
+    $('#buttonIcon').removeClass('d-none');
+  });
+
+  $('#collapseOne').on('hide.bs.collapse', function() {
+    $('#buttonText').removeClass('d-none');
+    $('#buttonIcon').addClass('d-none');
+  });
+});
 
 
 
