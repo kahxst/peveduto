@@ -515,11 +515,12 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
     padding: 15px;
   }
 }
-.container-nossalinha {
+.container-nossalinha2 {
   width: 100%;
   position: relative;
   top: 85px;
   height: 170vh;
+  background-color: #001749;
 }
 
 .caixa-principal-box {
@@ -540,11 +541,11 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
 }
 .caixa-principal-box .title h1 {
   font-size: 3rem;
-  color: #00143f;
-  font-family: "roboto2";
+  color: #EE6800;
+  font-family: "madetommy";
 }
 
-.container-nossalinha .sozinho {
+.container-nossalinha2 .sozinho {
   display: flex;
   width: 100%;
   height: 45%;
@@ -552,7 +553,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   align-items: center;
 }
 
-.container-nossalinha .image-container {
+.container-nossalinha2 .image-container {
   position: relative;
   overflow: hidden;
   width: 55%;
@@ -567,7 +568,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   padding: 15px;
 }
 
-.container-nossalinha .image-container img {
+.container-nossalinha2 .image-container img {
   transition: transform 0.3s ease;
   width: 100%;
   height: 100%;
@@ -576,36 +577,36 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   border-radius: 5px;
 }
 
-.container-nossalinha .image-container:hover img {
+.container-nossalinha2 .image-container:hover img {
   filter: brightness(40%);
   transform: scale(1.1);
   border-radius: 5px;
 }
 
-.container-nossalinha .image-container:hover .overlay {
+.container-nossalinha2 .image-container:hover .overlay {
   display: block;
 }
 
-.container-nossalinha .overlay {
+.container-nossalinha2 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: none;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 20, 63, 0.662745098);
   text-align: center;
   box-sizing: border-box;
   padding-top: 30%;
 }
 
-.container-nossalinha .overlay h1 {
+.container-nossalinha2 .overlay h1 {
   font-size: 24px;
   color: white;
   font-weight: bold;
 }
 
-.container-nossalinha .overlay a {
+.container-nossalinha2 .overlay a {
   font-size: 18px;
   color: #ee6800;
   text-decoration: none;
@@ -616,6 +617,93 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   position: relative;
   top: 110px;
   height: 100vh;
+}
+.box-containerPeveduto .container-nossalinha2 {
+  width: 100%;
+  position: relative;
+  top: 85px;
+  height: 170vh;
+  background-color: #001749;
+}
+.box-containerPeveduto .caixa-principal-box {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 35px;
+  width: 100%;
+  height: 160vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.box-containerPeveduto .caixa-principal-box .title {
+  width: 100%;
+  text-align: center;
+}
+.box-containerPeveduto .caixa-principal-box .title h1 {
+  font-size: 3rem;
+  color: #EE6800;
+  font-family: "madetommy";
+}
+.box-containerPeveduto .container-nossalinha-peveduto .sozinho {
+  display: flex;
+  width: 100%;
+  height: 45%;
+  justify-content: space-around;
+  align-items: center;
+}
+.box-containerPeveduto .container-nossalinha-peveduto .image-container {
+  position: relative;
+  overflow: hidden;
+  width: 55%;
+  height: 45%;
+}
+.box-containerPeveduto .sozinho .image-container {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+}
+.box-containerPeveduto .container-nossalinha-peveduto .image-container img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.box-containerPeveduto .container-nossalinha-peveduto .image-container:hover img {
+  filter: brightness(40%);
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+.box-containerPeveduto .container-nossalinha-peveduto .image-container:hover .overlay {
+  display: block;
+}
+.box-containerPeveduto .container-nossalinha-peveduto .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 20, 63, 0.662745098);
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 30%;
+}
+.box-containerPeveduto .container-nossalinha-peveduto.overlay h1 {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+.box-containerPeveduto .container-nossalinha-peveduto .overlay a {
+  font-size: 18px;
+  color: #ee6800;
+  text-decoration: none;
+  border-bottom: 1px solid #ee6800;
 }
 .box-containerPeveduto .caixatitleProduto {
   display: flex;
@@ -637,12 +725,17 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #001c53;
+}
+.box-containerPeveduto .apresentacao .card-body {
+  color: #fff;
 }
 .box-containerPeveduto .apresentacao .accordion {
   width: 50%;
 }
 .box-containerPeveduto .apresentacao .card {
   border: none;
+  background-color: #001c53;
 }
 .box-containerPeveduto .apresentacao .card-header {
   background: transparent;
@@ -663,6 +756,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
 .box-containerPeveduto .pevehd {
   height: 100vh;
   padding: 25px;
+  background-color: #001749;
 }
 .box-containerPeveduto .pevehd .title {
   display: flex;
@@ -677,10 +771,14 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
 .box-containerPeveduto .pevehd .title p {
   width: 95%;
   font-size: 16px;
+  color: #fff;
 }
 .box-containerPeveduto .pevehd .caixa-principal-box {
   height: auto;
   padding: 0px;
+}
+.box-containerPeveduto .pevehd .caixa-principal-box .overlay h1 {
+  color: #fff;
 }
 .box-containerPeveduto .pevehd .caixa-principal-box .overlay .p {
   width: 100%;
@@ -699,8 +797,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   height: 55vh;
   width: 100%;
   padding: 25px;
-  margin-top: 5rem;
-  background-color: #fafafa;
+  background-color: rgb(0, 20, 63);
 }
 .box-containerPeveduto .tabelapeveduto .box-tabela {
   width: 50%;
@@ -713,7 +810,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   margin-top: 10px;
   font-family: "roboto1";
   font-weight: 100;
-  color: rgb(70, 70, 70);
+  color: #EE6800;
 }
 .box-containerPeveduto .tabelapeveduto .boxtable-container {
   width: 50%;
@@ -729,9 +826,12 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   justify-content: center;
   padding-right: 85px;
 }
-.box-containerPeveduto .tabelapeveduto .boxtable-container .baixartabela a {
+.box-containerPeveduto .tabelapeveduto .boxtable-container .baixartabela .baixar {
   text-decoration: none;
-  color: rgb(52, 48, 255);
+  color: #EE6800;
+}
+.box-containerPeveduto .tabelapeveduto .boxtable-container .baixartabela .baixar:hover {
+  border-bottom: 1px solid #EE6800;
 }
 .box-containerPeveduto .tabelapeveduto .boxtable-container .baixartabela .link1 {
   margin-right: 10px;
@@ -745,6 +845,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
 .box-containerPeveduto .tabelapeveduto .table td, .box-containerPeveduto .tabelapeveduto .table th {
   padding: 1px;
   border: none;
+  color: #fff;
 }
 .box-containerPeveduto .acessorios {
   height: 90rem;
@@ -753,6 +854,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  background-color: #001749;
 }
 .box-containerPeveduto .acessorios .title h1 {
   font-family: "madetommy";
@@ -804,7 +906,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   justify-content: center;
   align-items: center;
   padding: 22px;
-  background-color: #f4f4f4;
+  background-color: #001e5f;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
@@ -815,7 +917,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   transition: transform 0.3s;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-1:hover {
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: #00143f;
   transition: background-color 0.2s;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-1:hover .img img {
@@ -832,7 +934,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   z-index: 1;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-2:hover {
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: #00143f;
   transition: background-color 0.2s;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-2:hover .img img {
@@ -849,7 +951,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   z-index: 1;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-3:hover {
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: #00143f;
   transition: background-color 0.2s;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-3:hover .img img {
@@ -866,7 +968,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   z-index: 1;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-4:hover {
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: #00143f;
   transition: background-color 0.2s;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-4:hover .img img {
@@ -883,7 +985,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   z-index: 1;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-5:hover {
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: #00143f;
   transition: background-color 0.2s;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-5:hover .img img {
@@ -900,7 +1002,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   z-index: 1;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-6:hover {
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: #00143f;
   transition: background-color 0.2s;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .container-menor .mini-container .box.box-6:hover .img img {
