@@ -47,6 +47,14 @@ body {
   font-family: "apple";
   src: url(../fontes/AppleGaramond-Light.ttf);
 }
+@font-face {
+  font-family: "madetommy";
+  src: url(../fontes/MADE\ Tommy\ Soft\ Bold\ PERSONAL\ USE.otf);
+}
+@font-face {
+  font-family: "madetommy2";
+  src: url(../fontes/MADE\ Tommy\ Soft\ Medium\ PERSONAL\ USE.otf);
+}
 .navegacao1 {
   height: 3rem;
   display: flex;
@@ -181,10 +189,8 @@ body {
   font-size: 14px;
   border: none;
   animation: pulsar 2s infinite;
-}
-.header .container button a {
   color: #fff;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .menu-toggle {
@@ -199,38 +205,131 @@ body {
   margin: 5px 0;
 }
 
-.quemsomos {
-  height: 65vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../IMG/capaquemsomos2.png);
-  background-size: 30%;
-  background-repeat: no-repeat;
-}
-.quemsomos .caixatxt {
-  width: 45%;
-  height: 65%;
+.confiratambem {
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background-color: #001749;
+}
+.confiratambem .title-confira h1 {
+  font-family: "madetommy";
+  color: #EE6800;
+  font-size: 50px;
+}
+.confiratambem .container-confiratbm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 85%;
+  height: 80%;
+}
+.confiratambem .container-confiratbm .mini-content {
+  width: 20%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.confiratambem .container-confiratbm .icone {
+  background-color: #00133b;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+}
+.confiratambem .container-confiratbm .icone img {
+  width: 100px;
+}
+.confiratambem .container-confiratbm .box {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #00133b;
+  color: #fff;
+  box-shadow: 0px 30px 50px -10px #0804f8;
+}
+.confiratambem .container-confiratbm .box p {
+  text-align: center;
+}
+.confiratambem .container-confiratbm .box a {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.quemsomos {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  background-color: #001749;
+  background-size: 100%;
+}
+.quemsomos .container-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.quemsomos .container-icon .quemsomosicon {
+  width: 100%;
+  height: 80%;
+}
+.quemsomos .container-icon .quemsomosicon img {
+  width: 100%;
+  height: 100%;
+}
+.quemsomos .quemsomosconteudo {
+  width: 65%;
+  height: 100%;
+}
+.quemsomos .quemsomosconteudo .caixatxt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
   padding: 25px;
 }
-.quemsomos .caixatxt .title {
+.quemsomos .quemsomosconteudo .caixatxt .title {
   text-align: center;
   margin-top: 15px;
 }
-.quemsomos .caixatxt .title h1 {
-  font-size: 65px;
+.quemsomos .quemsomosconteudo .caixatxt .title h1 {
+  font-size: 50px;
   color: #EE6800;
-  font-family: "fonte1";
+  font-family: "madetommy";
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
-.quemsomos .caixatxt .txt {
-  height: 400px;
+.quemsomos .quemsomosconteudo .caixatxt .txt {
+  height: 325px;
+  width: 45vw;
+  padding: 25px;
+  color: #fff;
 }
-.quemsomos .caixatxt .txt p {
+.quemsomos .quemsomosconteudo .caixatxt .txt p {
   font-size: 18px;
+  letter-spacing: 0.1rem;
+}
+.quemsomos .caixatxt {
+  width: 95%;
+  height: 50%;
+  padding: 25px;
+  margin-bottom: 100px;
 }
 
 .interacao {
@@ -250,6 +349,7 @@ body {
   height: 10rem;
   width: 10rem;
   margin: 30px;
+  position: relative;
 }
 .interacao .box a {
   list-style-type: none;
@@ -267,56 +367,31 @@ body {
   background-color: #010e2b;
   border-radius: 15px;
 }
-
-.interacao .box {
-  position: relative;
-}
-
 .interacao .box::after {
   content: attr(data-tooltip);
   position: absolute;
   margin-top: 15px;
   width: 220px;
   height: 35px;
-  background-color: #8f3e00;
   color: #fff;
   display: none;
   text-align: center;
   line-height: 35px;
-  top: 100%;
+  bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
-  overflow: hidden; /* Adicionado overflow */
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
 }
-
 .interacao .box:hover::after {
   display: block;
 }
 
-.confiratambem {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-image: url(../IMG/confiratambem2.png);
-}
-.confiratambem .container {
-  height: 75%;
-  width: 75%;
-}
-.confiratambem .container #carouselExampleControls {
-  height: 100%;
-  width: 100%;
-}
-.confiratambem .container #carouselExampleControls img {
-  width: 100%;
-  height: 698px;
-}
-
 .svg {
   position: relative;
-  top: 25px;
+  top: 0px;
+  background-color: #001749;
 }
 
 .rodape {
@@ -325,7 +400,7 @@ body {
   background-color: #ee6800;
 }
 .rodape .container {
-  width: 1000%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -344,7 +419,7 @@ body {
 }
 .rodape .container .container-um {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 .rodape .container .container-um .box {
@@ -364,23 +439,7 @@ body {
   color: #d4d4d4;
 }
 .rodape .container .container-um .box a:hover {
-  color: #010e2b;
-}
-.rodape .container .container-um .box a:hover::after {
-  content: "";
-  display: block;
-  width: 0%;
-  height: 1px;
-  background-color: #063395;
-  animation: link 0.5s forwards;
-}
-@keyframes link {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
+  border-bottom: 1px solid #ffa15a;
 }
 
 body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easing=new-easing] {
@@ -429,31 +488,6 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
     width: 230px;
     font-size: 16px;
   }
-  .confiratambem {
-    height: 120vh;
-    background-image: url(../IMG/cftb.png);
-    background-repeat: no-repeat;
-  }
-  .confiratambem .container {
-    height: 75%;
-    width: 100%;
-  }
-  .confiratambem .carousel-control-next-icon {
-    position: relative;
-    top: -112px;
-    width: 25px;
-    padding: 15px;
-    height: 25px;
-    background-color: rgba(0, 0, 0, 0.507);
-  }
-  .confiratambem .carousel-control-prev-icon {
-    position: relative;
-    top: -112px;
-    width: 25px;
-    padding: 15px;
-    height: 25px;
-    background-color: rgba(0, 0, 0, 0.507);
-  }
   .interacao {
     width: 100%;
     height: 750px;
@@ -462,17 +496,6 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
     display: flex;
     flex-direction: column;
     width: 35%;
-  }
-  .quemsomos {
-    height: 72vh;
-    background-image: url(../IMG/quemsomos768.png);
-    background-size: 100%;
-  }
-  .quemsomos .caixatxt {
-    width: 95%;
-    height: 50%;
-    padding: 25px;
-    margin-bottom: 100px;
   }
   .svg {
     position: relative;
@@ -649,11 +672,11 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
 }
 .box-containerPeveduto .pevehd .title h1 {
   color: #EE6800;
-  font-weight: 600;
+  font-family: "madetommy";
 }
 .box-containerPeveduto .pevehd .title p {
   width: 95%;
-  font-size: 14px;
+  font-size: 16px;
 }
 .box-containerPeveduto .pevehd .caixa-principal-box {
   height: auto;
@@ -676,7 +699,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   height: 55vh;
   width: 100%;
   padding: 25px;
-  margin-top: 25px;
+  margin-top: 5rem;
   background-color: #fafafa;
 }
 .box-containerPeveduto .tabelapeveduto .box-tabela {
@@ -731,6 +754,11 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   align-items: center;
   flex-direction: column;
 }
+.box-containerPeveduto .acessorios .title h1 {
+  font-family: "madetommy";
+  font-size: 3rem;
+  color: #EE6800;
+}
 .box-containerPeveduto .acessorios .container-principal-acessorios {
   width: 100%;
   height: 125vh;
@@ -739,6 +767,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 8rem;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .foto-principal {
   display: flex;
@@ -747,6 +776,7 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   height: 230px;
   width: 45%;
   margin-top: 15px;
+  margin-bottom: 2rem;
 }
 .box-containerPeveduto .acessorios .container-principal-acessorios .foto-principal img {
   height: 100%;
@@ -885,4 +915,25 @@ body[data-aos-easing=new-easing] [data-aos], [data-aos][data-aos][data-aos-easin
   color: #fff;
   font-size: 24px;
   z-index: 1;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
 }/*# sourceMappingURL=style.css.map */
